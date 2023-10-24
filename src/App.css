@@ -1,11 +1,42 @@
-#grid {
-
+* {
+  margin:0;
+  padding: 0;
 }
+
+/* header */
+header {
+  width: 100%;
+  height: 150px;
+}
+
+nav {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li, a {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* section */
 
 #image-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
+  margin-bottom: 10%;
 }
 
 img {
@@ -14,10 +45,35 @@ img {
 }
 
 /* Title CSS */
-h1, h3, p {
+h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+h3, p {
   text-align: center;
 }
 
 h3:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+/* FOOTER */
+footer {
+  clip-path: polygon(100% 25%, 0% 100%, 100% 100%);
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  height: 30%;
+}
+
+.Copyright {
+  color: white;
+  padding-top: 10%;
+  padding-left: 5%;
 }

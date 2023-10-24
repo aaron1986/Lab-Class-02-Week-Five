@@ -1,4 +1,6 @@
 import './App.css'
+import Header from './Header'
+import Footer from './Footer'
 import React, { useState, useEffect } from 'react';
 
 function App() {
@@ -39,6 +41,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <h1>Lab: Class 02</h1>
       <section id="grid">
         <div id="image-grid">
@@ -55,7 +58,7 @@ function App() {
         </div>
      
       </section>
-   
+   <Footer />
     </div>
   );
 }
